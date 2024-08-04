@@ -1,0 +1,589 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+body {
+    overflow-x: hidden;
+}
+ul li a {
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 3.5rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    align-items: center;
+}
+.header-icons {
+    display: flex;
+    gap: 2rem;
+}
+.header-icons i:hover {
+    color: coral;
+    opacity: .8;
+    cursor: pointer;
+}
+ul li a {
+    transition: .2s;
+}
+
+ul li a:hover{
+    color: coral;
+}
+.under-line{
+    width: 0;
+    transition: 0.2s;
+}
+.under-line:hover {
+    background: coral;
+    height: .1rem;
+    width: 3rem;
+}
+.under-line1:hover {
+    background: coral;
+    height: .1rem;
+    width: 4rem;
+}
+.under-line0:hover {
+    background: coral;
+    height: .1rem;
+    width: 2rem;
+}
+.hero-banner{
+    padding-top: 1rem;
+}
+.hero-banner .container {
+    width: 100%;
+    background: linear-gradient(to left, #f1f1ff 50% , #fff 50%);
+    height: 160vh;
+        /* display: flex; */
+        position: relative;
+        justify-content: space-between;
+        
+}
+.hero-banner .container .inner-container {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    
+}
+.hero-banner .container .hero-banner-content{
+    width: 100%;
+    padding-top: 22rem;
+    text-align: start;
+    padding-left: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 1;
+}
+.hero-banner .hero-banner-content .np-product {
+    font-size: 1.7rem;
+    padding-left: 6.5rem;
+    width: 20rem;
+   
+}
+.hero-banner .hero-banner-content .name-of-product {
+    
+    font-size: 3.3rem;
+    
+    
+}
+.hero-banner .hero-banner-content .name-of-product1 {
+    display: none;
+    font-size: 3.3rem;
+    padding-left: 1rem;
+}
+.hero-banner .hero-banner-content .name-of-product2 {
+    display: none;
+    font-size: 3.3rem;
+    padding-left: 1rem;
+}
+.hero-banner .hero-banner-content .buttons {
+padding-left:4rem ;
+display: flex;
+}
+.hero-banner-content .buttons .button1 {
+    width: 7rem;
+    height: 3.5rem;
+    padding-top: .3rem;
+    background: transparent;
+    color: orangered;
+}
+.hero-banner-content .buttons .button1 .button1{
+    border: solid 1px orangered;
+    font-size: 1rem;
+    border-right: none;
+}
+.hero-banner-content .buttons .button1 .button1:hover {
+    cursor: pointer;
+}
+.hero-banner-content .buttons .button2 {
+    color: #f1f1ff;
+    font-size: 1rem;
+    width: 10rem;
+    height: 4rem;
+    background: orangered;
+    opacity: .8;
+    border:none;
+    cursor: pointer;
+}
+.hero-banner-content .buttons .button2:hover  {
+    background: transparent;
+    color: orangered;
+    border: solid 1px orangered;
+}
+.hero-banner .container .hero-banner-image {
+    width: 50rem;
+  
+    /* position: relative; */
+    /* padding-right: 20rem;
+    padding-top: 8rem;
+    height:80rem; */
+    /* align-self: center; */
+    top: 8rem;
+    right: 7rem;
+    position: absolute;
+}
+.hero-banner .container .hero-banner-image img {
+    width: 100%;
+    /* height: 100%; */
+    /* position: absolute; */
+    object-fit: contain;
+    /* top: 10rem;
+    
+    right: 8rem; */
+    /* animation: animated 1s 4s infinite alternate-reverse; */
+}
+.prev {
+    z-index: 2;
+    opacity: .8;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 29rem;
+    left: 1rem;
+}
+.next {
+    z-index: 2;
+    opacity: .8;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 29rem;
+    right: 1rem;
+}
+.hero-banner-image1 {
+    width: 50rem;
+    position: absolute;
+ display: none;
+top: 6rem;
+left: 23rem;
+transform: rotate(-27deg);
+
+}
+.hero-banner-image1 img {
+  
+    transform: scaleX(-1);
+    /* animation: animated 4s 3s infinite alternate-reverse; */
+   /* transition: 2s; */
+ }
+
+.hero-banner-image1 {
+    width: 100%;
+    object-fit: contain;
+}
+/* .hero-banner-image2 {
+    width: 100%;} */
+
+   
+.hero-banner-image2 img {
+ width: 100%;
+    transform: scaleX(-1);}
+
+.hero-banner-image2 {
+ 
+ display: none; 
+   width: 90rem;
+    object-fit: contain;
+    position: absolute;
+  top: -38rem;
+ left: -5rem;
+   /* transform: rotate(270deg);  */
+   /* transform: translateY(25rem); */
+   transform: rotate(-29deg);
+}
+
+/* .hero-banner-image {
+    visibility: hidden;
+} */
+
+
+
+/* @keyframes animated-images {
+    0%{
+        .hero-banner-image {
+        display: run-in;
+        }
+    
+    }
+    0%{
+        .hero-banner .hero-banner-content .name-of-product {
+            display: run-in;
+        }
+    }
+    33%{.hero-banner-image1 {
+        display: run-in;
+    }
+       
+        }
+        33% {.hero-banner .hero-banner-content .name-of-product1 {
+            display: run-in;
+        }
+        }
+66% {.hero-banner-image1 {
+    display: run-in;
+}
+
+} 66% {
+    .hero-banner .hero-banner-content .name-of-product2 {
+        display: run-in;
+    }
+}
+    } */
+ .edition-banner {
+height: 70vh;
+ }
+ .edition-banner .container {
+    
+    display: flex;
+    
+ }
+ .edition-banner .container .image-container {
+    width:calc((100%) / 3);
+    justify-content: center;
+    position: relative;
+    border:  rgba(0,0,0, .08) .1px solid ;
+    
+ }
+ .edition-banner .container .image-container img {
+    object-fit: contain;
+    width: 100%;
+    cursor: pointer;
+    
+ }
+ .edition-banner .container .image-container .edition-image:hover {
+    transform: scale(1.2);
+ }
+
+ .edition-banner .container .image-container .image-content {
+  position: absolute;
+  bottom: 8rem;
+  justify-content: center;
+  left: 6.5rem;
+ font-size: 1rem;
+ width: 25rem;
+ }
+ .edition-banner .container .image-container .image-content h1 {
+    cursor: pointer;
+ }
+ .edition-banner .container .image-container .image-content h1:hover{
+    color: coral;
+ }
+ .edition-banner .container .image-container .image-content p {
+    position: absolute;
+    opacity: .7;
+    left: 1.8rem;
+    top: 2rem;
+ }
+ .edition-banner .container .image-container .image-content p:hover {
+    color: coral;
+ }
+ .hero-state {
+
+ }
+ .hero-state  .container {
+    height: 140vh;
+    background: linear-gradient(to right,#f1f1ff  50% , #fff 50%);
+    display: flex;
+position: relative;
+ }
+ .hero-state  .container  .hero-state-image {
+    padding-top:5rem ;
+    height: 80%;
+    width: 70%;
+    padding-left: 4rem;
+ 
+
+ }
+ .hero-state  .container  .hero-state-image  img {
+    width: 87%;
+    border:  rgba(0,0,0, .1) .1px solid ;
+    object-fit: contain;
+ }
+ .hero-state  .container .hero-state-content {
+    position: absolute;
+    z-index: 1;
+    top: 38rem;
+    left: 55rem;
+    font-size: 1.3rem;
+ }
+.hero-state  .container .hero-state-content #p1 {
+    position: absolute;
+    color:  rgba(0,0,0, .5);
+    border-top:  rgba(0,0,0, .5) .1px solid ;
+    bottom: 23rem;
+    width: 11rem;
+    cursor: default;
+   
+ }
+ .hero-state  .container .hero-state-content h1 {
+    font-size: 3rem;
+    position: absolute;
+    bottom: 17rem;
+  left: -3.7rem;
+    width: 25rem;
+    opacity: .9;
+    cursor: default;
+   
+ }
+ .hero-state  .container .hero-state-content h4 {
+font-size: 2rem;
+position: absolute;
+bottom: 12.5rem;
+left: 2rem;
+color: coral;
+cursor: default;
+   
+ }
+ .hero-state  .container .hero-state-content h1:hover {
+    color: coral;
+   
+ }
+ .hero-state  .container .hero-state-content #p2 {
+position: absolute;
+
+width: 20rem;
+bottom: 6rem;
+left: -2rem;
+cursor: default;
+   
+ }
+ .hero-state  .container .hero-state-content button {
+    width: 6.5rem;
+    position: absolute;
+    height: 3rem;
+    background: black;
+    color: #f1f1ff;
+    font-size: 1rem;
+    border: none;
+    left: 2rem;
+    cursor: pointer;
+    bottom: -.2rem;
+ }
+ .hero-state  .container .hero-state-content button:hover {
+    background: coral;
+
+ }
+ .hero-conquer {
+
+ }
+ .hero-conquer .container {
+    padding-top: 4rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+ }
+ .title-container h1 {
+font-size:2.5rem;
+opacity: .83;
+padding-left: 32rem;
+ }
+ .images-container {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: .8rem;
+ }
+ .hero-conquer-image-container {
+    width: calc((100% - 2rem) / 3);
+font-size: 1.1rem;
+ }
+ .hero-conquer-image-container img {
+    width: 100%;
+    border:  rgba(0,0,0, .14) .1px solid ;
+    object-fit: contain;
+ }
+ .hero-conquer-image-container h6 {
+    font-size: 1.1rem;
+ }
+ .hero-conquer-image-container p {
+    cursor: pointer;
+ }
+ .hero-conquer-image-container p:hover{
+    color: coral;
+ }
+ .hero-cont {
+
+ }
+ .hero-cont .container {
+    padding-top: 12rem;
+    padding-inline: 1rem;
+    height: 100vh;
+
+ } 
+ .hero-cont .container .images-container {
+    gap: 2rem;
+    display: flex;
+
+ }
+ .hero-cont-image-container {
+    width: calc((100% - 10rem) / 6);
+    height: 150px;
+    justify-content: space-between;
+    cursor: pointer;
+ }
+ .hero-cont-image-container img {
+    width: 100%;
+    object-fit: contain;
+ }
+ .hero-cont-image-container img:hover {
+    transform: scale(1.2);
+ }
+ .hero-cont .container .contact-container {
+    display: flex;
+    padding-top: 8rem;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    position: relative;
+    
+ }
+ .hero-cont .container .contact-container h2 {
+    opacity: .8;
+ }
+ .hero-cont .container .contact-container p {
+    padding-top: 1rem;
+    opacity: .7;
+ }
+ .hero-cont .container .contact-container input {
+    border: none;
+    outline: none;
+    width: 25rem;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 10rem;
+    top: 11.2rem;
+    z-index: 1;
+    border-bottom:  rgba(0,0,0, .6) .3px solid ;
+    padding-bottom: .5rem;
+ }
+ .hero-cont .container .contact-container button {
+ border: .1px;
+    border-radius: 30px;
+  background: black;
+  color: #f1f1ff;
+  opacity: .8;
+   width: 9rem;
+    height: 4rem;
+    font-size: 1rem;
+    position: absolute;
+    right: .5rem;
+    top: 9.5rem;
+    cursor: pointer;
+ }
+ .hero-cont .container .contact-container button:hover {
+    background: coral;
+ }
+ footer {
+padding-top: 5rem;
+    
+ }
+ footer .container {
+    padding-top: 5rem;
+    background-color:#f1f1ff ;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 4rem;
+ }
+ footer .container .inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+ }
+ footer .container .inner-container h3{
+font-size: 1.4rem;
+ }
+ footer .container .inner-container p {
+    font-size: 1.3rem;
+    opacity: .7;
+    cursor: pointer;
+ }
+ footer .container .inner-container p:hover{
+    color: coral;
+ }
+ footer .container .inner-container .num {
+    color: coral;
+ }
+ footer .container .inner-container p {
+    padding-top: .5rem;
+ }
+ footer .container .inner-container h5 {
+font-size: 1.15rem;
+padding-top: .5rem;
+opacity: .7;
+ }
+ footer .container .inner-container .footer-icons {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+ }
+ footer .container .inner-container .footer-icons .icons {
+    position: absolute;
+    left: 4rem;
+    top: .6rem;
+    opacity: .4;
+    cursor: pointer;
+ }
+ footer .container .inner-container .footer-icons .icons i:hover {
+    color: coral;
+ }
+ footer .black {
+    height: 3.5rem;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+  
+ }
+ footer .black p {
+    opacity: .8;
+    font-size: 1.2rem;
+padding-top: 1rem;
+    color: #f1f1ff;
+    padding-left: 3rem;
+ }
+ footer .black .down-icons i {
+   
+  width: 3rem;
+  height: 2rem;
+  color: gray;
+  cursor: pointer;
+    /* padding-right: .5rem; */
+ }
+ footer .black .down-icons i:hover {
+    color: #f1f1ff;
+ }
+ footer .black .down-icons {
+    display: flex;
+    padding-top: 1.3rem;
+    /* gap: -15rem; */
+   
+    
+ }
+ 
