@@ -653,6 +653,9 @@ padding-top: 1rem;
         width: 50rem;
 
     }
+    .hero-banner .hero-banner-content .name-of-product {
+        padding-right: 8rem;
+    }
     .hero-banner .container .hero-banner-image {
         /* padding-left: 5vw; */
     left: .7rem;
@@ -692,7 +695,7 @@ padding-top: 1rem;
         
     }
     .edition-banner .container .image-container .image-content {
-    left: 40vw;
+    left: 35vw;
     top: 12rem;
     }
     .hero-state .container {
@@ -740,7 +743,7 @@ top: 125vh;
     height: 70vh;
     }
     .title-container h1 {
-      padding-left: 18rem; 
+      padding-left: 13rem; 
      
     }
     .images-container {
@@ -776,10 +779,10 @@ top: 125vh;
         display: none;
     }
     .hero-cont .container .contact-container  {
-        padding-top: 35vh;
+        padding-top: 25vh;
         padding-left: 22vw;
         width: 100%;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .hero-cont .container .contact-container input {
         top: 55vh;
@@ -806,7 +809,7 @@ top: 125vh;
     }
     footer .container .inner-container {
         width: calc((100% - 1rem) / 2);
-        padding-left: 8vw;
+        padding-left: 6.5vw;
         padding-bottom: 2vh;
     }
     footer .black {
@@ -815,9 +818,9 @@ top: 125vh;
         /* background: rgba(0, 0, 0, .9); */
     }
     footer .black p {
-
+        padding-left: 2rem;
     }
     footer .black .down-icons i {
-        padding-left: 3rem;
+        padding-left: 2rem;
     }
 }
