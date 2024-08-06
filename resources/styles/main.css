@@ -649,12 +649,12 @@ padding-top: 1rem;
     }
     .hero-banner .container .hero-banner-content {
         padding-top: 30vh;
-        padding-left: 13vw;
+        /* padding-left: 13vw; */
        width: 100%;
 
     }
     .hero-banner .hero-banner-content .name-of-product {
-        padding-right: 8rem;
+        /* padding-right: 8rem; */
     }
     .hero-banner .container .hero-banner-image {
         /* padding-left: 5vw; */
