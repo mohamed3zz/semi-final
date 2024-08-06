@@ -650,7 +650,7 @@ padding-top: 1rem;
     .hero-banner .container .hero-banner-content {
         padding-top: 80vh;
         padding-left: 18vw;
-        width: 50rem;
+       width: 100%;
 
     }
     .hero-banner .hero-banner-content .name-of-product {
