@@ -803,9 +803,14 @@ padding-top: 30vh;
         height: 80vh;
         
     }
+    .hero-cont .container .images-container {
+        gap: 1rem;
+        justify-content: space-around;
+        padding-left: 2.5vw;
+    }
     .hero-cont-image-container {
-        width: calc((80% - .5rem) / 1);
-        object-fit: contain;
+        width: calc((80% - 2rem) / 1);
+        /* object-fit: contain; */
         /* height: calc((120vh) / 6); */
     
     }
