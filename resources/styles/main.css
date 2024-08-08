@@ -341,7 +341,7 @@ height: 70vh;
 
  }
  .hero-state  .container {
-    /* height: 140vh; */
+    height: 140vh;
     background: linear-gradient(to right,#f1f1ff  50% , #fff 50%);
     display: flex;
 position: relative;
@@ -515,6 +515,7 @@ font-size: 1.1rem;
     z-index: 1;
     border-bottom:  rgba(0,0,0, .6) .3px solid ;
     padding-bottom: .5rem;
+    color: rgba(0,0,0,.7)
  }
  .hero-cont .container .contact-container button {
  border: .1px;
@@ -620,7 +621,10 @@ padding-top: 1rem;
     
  }
  @media (max-width:1024px) {
-
+body {
+   
+    /* padding-inline: 1.5vw !important; */
+}
     .nav-bar-mobile {
         display: flex;
 
@@ -641,6 +645,7 @@ padding-top: 1rem;
         display:none;
     }
     .hero-banner .container {
+        padding: 3% !important;
         background: linear-gradient( to bottom, #f1f1ff 50% , #fff 50%);
         height: 90vh;
     }
@@ -662,7 +667,7 @@ padding-top: 1rem;
     .hero-banner .hero-banner-content .name-of-product {
         /* padding-right: 8rem; */
        
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
     .hero-banner .hero-banner-content .buttons {
         padding-left: 5%;
@@ -678,7 +683,7 @@ top: 17vh;
     .hero-banner .container .hero-banner-image img {
        
         position: absolute;
-        top: -6rem;
+        top: -8vh;
     }
     .next {
         display: none;
@@ -690,6 +695,7 @@ top: 17vh;
         height: 100vh;
     }
     .edition-banner .container  {
+        padding: 2% !important;
         flex-direction: column;
         align-items: center;
         overflow-x: hidden;
@@ -706,40 +712,47 @@ top: 17vh;
         
     }
     .edition-banner .container .image-container .image-content {
-    left: 35vw;
+    left: 30vw;
     top: 12rem;
     }
     .hero-state .container {
-        flex-wrap: wrap;
+        padding: 4% !important;
+        /* flex-wrap: wrap; */
         height:110vh ;
         overflow-x: hidden;
-        padding-left: 5rem;
+        padding-left: 0%;
 
         background: linear-gradient(to bottom,#f1f1ff 30% , #fff 70%);
-        flex-direction: column;
+        /* flex-direction: column; */
        
     }
     .hero-state  .container  .hero-state-image  {
-        width: 85%;
-        height: 80%;
-       padding-left: 0%;
-       margin-left: 0%;
-       padding-top: 0%;
+        width: 100%;
+        padding: 0%;
+        /* height: 80%; */
+      /* padding-right: 15vw; */
+    /* left: -7vw; */
+
+       padding-top: 2vh;
        padding-bottom: 35vh;
-       
+      
  
        
     }
     .hero-state  .container  .hero-state-image img {
 height: 100%;
 width: 100%;
+
+border: none;
     }
     .hero-state  .container .hero-state-content {
         /* position: static; */
         /* padding-left: 30rem; */
 /* font-size: 2rem; */
-left: 30vw;
+left: 23vw;
 /* top: 55vh; */
+width: 100%;
+padding-left: 0%;
 padding-top: 30vh;
 
     }
@@ -747,7 +760,8 @@ padding-top: 30vh;
         position: static;
     } */
     .hero-state  .container .hero-state-content #p1  {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+        width: 50%;
     }
     .hero-state  .container .hero-state-content  #p2 {
     padding-bottom: 2.5rem;
@@ -768,6 +782,7 @@ padding-top: 30vh;
     }
     .hero-conquer .container {
     height: 60vh;
+    padding-inline: 3% !important;
     padding-bottom: 0%;
     
     }
@@ -789,6 +804,7 @@ padding-top: 30vh;
     }
     .hero-conquer-image-container img {
         width: 100%;
+       
     }
     #img3 {
       display: none;
@@ -799,14 +815,16 @@ padding-top: 30vh;
     }
     .hero-cont .container {
         /* height: 120vh; */
+        padding: 3% !important;
         padding-top: 0%;
         height: 80vh;
-        
+        gap: 1vw;
+        padding-left: 6.5vw;
     }
     .hero-cont .container .images-container {
         gap: 1rem;
         justify-content: space-around;
-        padding-left: 2.5vw;
+        /* padding-left: 1.5vw; */
     }
     .hero-cont-image-container {
         width: calc((80% - 2rem) / 1);
@@ -834,9 +852,13 @@ padding-top: 30vh;
         width: 100%;
         left: 1vw;
         font-size: 1.5rem;
-        padding-left: 30vw;
+        /* padding-left: 30vw; */
         
         top: 30vh;
+        color: rgba(0,0,0,.7)
+    }
+    .hero-cont .container .contact-container input::placeholder {
+        padding-left: 20vw;
     }
     .hero-cont .container .contact-container button {
         top: 38vh;
@@ -846,8 +868,10 @@ padding-top: 30vh;
     }
     footer {
         padding-top: 0%;
+      
     }
     footer .container {
+        padding: 5% !important;
         
         flex-direction: row;
         flex-wrap: wrap;
