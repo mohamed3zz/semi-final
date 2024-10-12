@@ -353,7 +353,7 @@ padding-left: 45%;
   }
   .footer-responsive {
     /* display: inline-block; */
-    
+    padding-top: 1.5em;
    gap: 1.5em;
    padding-inline: 1em;
     display: flex;
