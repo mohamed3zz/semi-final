@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+body {
+    overflow-x: hidden;
+    
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-menu ul {
+    z-index: 11;
+}
+ul {
+    display: flex;
+}
+ul li a {
+    text-decoration: none;
+}
+ul {
+   /* display: flex; */
+    list-style-type: none;
+    /* display: flex; */
+    gap: 3.5rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    align-items: center;
+}
+.nav-bar-mobile {
+    display: none;
+}
+.nav-bar-mobile i:hover {
+    color: coral;
+}
+.search {
+    display: none;
+}
+.search i:hover {
+    color: coral;  
+}
+
+.navbar .navbar-menu  {
+    display: flex;
+}
+
+.header-icons {
+    display: flex;
+ z-index: 11;
+}  
+
+
+.header-icons {
+    /* display: flex; */
+    gap: 2rem;
+}
+.header-icons i:hover {
+    color: coral;
+    opacity: .8;
+    cursor: pointer;
+}
+ul li a {
+    transition: .2s;
+}
+
+ul li a:hover{
+    color: coral;
+}
+.hero-state1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8em 3em;
+}
+.hero-state1-image {
+    padding: 0em;
+    width: 40%;
+    height: 70vh;
+    border: 1px solid rgba(0,0,0,.1);
+} 
+.hero-state1-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hero-state1-image-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    position: absolute;
+    top: 18em;
+right: 11em;
+}
+.hero-state1-image-content p {
+    font-size: 2.7em;
+
+}
+.add-to-cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2.5em;
+    gap: 1em;
+}
+.add-to-cart p {
+    font-size: .5em !important;
+}
+.wrapper {
+    display: flex;
+    /* flex-direction: row; */
+  
+}
+.wrapper span {
+    border: 1px solid rgba(0,0,0,.3);
+    width: 1em;
+    display: flex;
+    display: flex;
+    justify-content: center;
+}
+.wrapper button {
+    width: 2em;
+    border: 1px solid rgba(0,0,0,.3);
+    height: 1.5em;
+    background: white;
+    color: black;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    font-size: .8em;
+}
+.wrapper button:hover {
+    color: white;
+    background-color: black;
+}
+.add-to-cart-button button {
+    color: rgba(225,255,255,.3);
+    background-color: rgba(0,0,0,.8) ;
+    color: white;
+    width: 20em;
+    height: 4em;
+    border: none;
+    cursor: pointer;
+}
+.add-to-cart-button button:hover {
+    background: rgba(0,0,0,.5);
+}
+.hero-state1-image-description {
+    position: absolute;
+    top: 36em;
+    right: 8em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: rgba(0,0,0,.3);
+    font-size: 1.1em;
+    gap: 1.5em;
+}
+.hero-state1-image-description h6 {
+    font-size: 1.3em !important;
+    opacity: 1 !important;
+}
+.category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5em;
+}
+.category p {
+    opacity: .8 !important;
+    font-size: 1.3em !important;
+}
+.footer {
+    position: relative;
+    padding: 1.8em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    font-size: 1.2em;
+    background-color:#f1f1ff ;
+    margin-top: 6em;
+
+}
+.footer-main-menu {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    
+    gap: 5em;
+}
+.footer-menues {
+  
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    cursor: pointer;
+}
+
+
+.footer-menues ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.footer-menues ul li {
+    opacity: .8;
+}
+.footer-menues ul li:hover {
+    opacity: 1;
+}
+/* .shipping-text {
+   position: absolute;
+   left: 20em;
+} */
+ .help {
+   position: absolute;
+   left: 6.5em;
+ }
+ .follow-us {
+    position: absolute;
+    left: 12em;
+ }
+ .shipping {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+ }
+ .shipping p {
+    cursor: text !important;
+    opacity: .4;
+ }
+ .shipping ul {
+    display: flex;
+    flex-direction: row;
+    
+ }
+ .shipping ul i {
+    opacity: .3;
+    border: 1px solid rgba(0,0,0,.3)!important;
+    border-radius: 50%;
+    padding: 1em;
+ }
+ .shipping ul i:hover {
+    opacity: 1;
+    border: 1px solid rgba(0,0,0,1);
+ }
+ .sign-up {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    position: absolute;
+    left: 40em;
+ }
+ .sign-up p {
+    opacity: .6;
+ }
+ .sign-up input {
+    width: 25em;
+    height: 5em;
+    background: white;
+    border: none;
+    outline: none;
+    padding: 1em;
+    color: rgba(0,0,0,.6);
+    
+ }
+ .sign-up input::placeholder {
+   
+    font-size: 1.2em;
+ }
+ .sign-up button {
+    border: none;
+    background: rgba(0,0,0,.8);
+    color: white;
+    padding: 1em;
+    width: 10em;
+    height: 5em;
+    cursor: pointer;
+ }
